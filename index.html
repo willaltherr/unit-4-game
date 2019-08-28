@@ -7,6 +7,9 @@
       <title>Crystal Game</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="assets/css/style.css">
+
+      <!-- JQuery Script-->
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
       
 
   </head>
@@ -21,38 +24,51 @@
 
       <div class="row">
         <div class="col-md-12 h2 text-center">
-            The Crystals Numbers Must Equal This:
+            Pick The Crystals To Get The Target Score!
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
           <img src="assets/images/Crystal_1.jpg" alt="crystal_1" class="img-thumbnail crystalImg">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <img src="assets/images/Crystal_2.jpg" alt="crystal_2" class="img-thumbnail crystalImg">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <img src="assets/images/Crystal_3.jpg" alt="crystal_3" class="img-thumbnail crystalImg">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <img src="assets/images/Crystal_4.jpg" alt="crystal_4" class="img-thumbnail crystalImg">
         </div>
+        <div class="col-md-2"></div>
       </div>
 
       <div class="row">
-        <div class="col-md-12 h2 text-center">
-            Your Score:
+        <div class="col-md-3"></div>
+        <div class="col-md-3 h2 text-center">
+            Get Target Score:
+            <span class="answer"></span>
         </div>
+        <div class="col-md-3 h2 text-center">
+          Your Score:
+          <span class="score"></span>
+        </div>
+        <div class="col-md-3"></div>
       </div>
 
       <div class="row">
-        <div class="col-md-6 text-center">
-            <h2>Wins:</h2>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 h2 text-center">
+            Wins:
+            <span class="wins"></span>
         </div>
-        <div class="col-md-6 text-center">
-          <h2>Losses:</h2>
+        <div class="col-md-3 h2 text-center">
+            Loss:
+            <span class="loss"></span>
         </div>
+        <div class="col-md-3"></div>
       </div>
 
 
