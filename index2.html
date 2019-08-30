@@ -1,19 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Crystal Collector</title>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Crystal Game</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="assets/css/style.css">
 
       <!-- JQuery Script-->
       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      
 
-</head>
+  </head>
 
-<body>
-  
-</body>
+  <body>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12 h1 text-center">
+              This is the Dark Crystal Game
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 h2 text-center">
+            Pick The Crystals To Get The Target Score!
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+          <img src="assets/images/Crystal_1.jpg" alt="crystal_1" class="img-thumbnail crystalImg" id="image1">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/images/Crystal_2.jpg" alt="crystal_2" class="img-thumbnail crystalImg"id="image2">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/images/Crystal_3.jpg" alt="crystal_3" class="img-thumbnail crystalImg"id="image3">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/images/Crystal_4.jpg" alt="crystal_4" class="img-thumbnail crystalImg"id="image4">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3 h2 text-center">
+            Get Target Score:
+            <span class="answer"></span>
+        </div>
+        <div class="col-md-3 h2 text-center">
+          Your Score:
+          <span class="score"></span>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3 h2 text-center">
+            Wins:
+            <span class="wins"></span>
+        </div>
+        <div class="col-md-3 h2 text-center">
+            Loss:
+            <span class="loss"></span>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
+
+      <script src="assets/javascript/game.js"></script>
+  </body>
 </html>

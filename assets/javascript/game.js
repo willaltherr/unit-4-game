@@ -1,41 +1,25 @@
-// Pick a random number between 19-120 and have it show up on screen.
+// Pseudo Coding
 
-function randNumber(min, max) {
-  return Math.floor(Math.random() * (max - min) ) + min;
-}
+// Each crystal needs a ranom number between 1-12
 
-// New Random Answer
-var randAnswer = randNumber(19, 120);
+// New Random number that we have to target between 19-120
 
-// New Random Numbers for Crystals
-var randCrystalOne = randNumber(1, 12);
-var randCrystalTwo = randNumber(1, 12);
-var randCrystalThree = randNumber(1, 12);
-var randCrystalFour = randNumber(1, 12);
+// Any crystal that gets click should add to the total results
 
-console.log("Answer is: " + randAnswer);
-console.log("Crystal 1 is: " + randCrystalOne);
-console.log("Crystal 2 is: " + randCrystalTwo);
-console.log("Crystal 3 is: " + randCrystalThree);
-console.log("Crystal 4 is: " + randCrystalFour);
+// Tally the wins and losses
 
-// Get Answer to Appear using JQuery
-$( ".answer" ).text(randAnswer);
+// If the results equal, win by 1 increment
 
-// Additional Global Variables
+// If the result goes over the Random target number, lose by 1 increment
+
+// Start over once you either win or lose
+
+
+var randNumbers;
 var wins = 0;
-var loss = 0;
-var score = 0;
+var losses = 0;
 
-// Get Wins & Losses to Appear
-$( ".wins" ).text(wins);
-$( ".loss" ).text(loss);
-$( ".score" ).text(score);
 
-// Get Random Numbers Assigned to Crystals
-$('crystalImg').on('click', function() {
-  $( '#image1').append(randCrystalOne);
-  $( '#image2').append(randCrystalTwo);
-  $( '#image3').append(randCrystalThree);
-  $( '#image4').append(randCrystalFour);
-})
+for (var i = 0; i < 4; i++) {
+  console.log("Crystal Collector");
+}
