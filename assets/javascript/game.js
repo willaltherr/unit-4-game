@@ -22,12 +22,12 @@ var losses = 0;
 randNumbers = Math.floor(Math.random() * 101 ) + 19;
   // console.log(randNumbers);
 
-$("#targetScore").html('Target Score =' );
+$("#targetScore").html('Target Score = ' + randNumbers);
 
 for (var i = 0; i < 4; i++) {
   
-  var random = Math.floor(Math.random() * 12);
-  // console.log(random);
+  var random = Math.floor(Math.random() * 12) + 1;
+  console.log(random);
 
   var crystalRocks = $("<div>");
       crystalRocks.attr({
@@ -37,3 +37,9 @@ for (var i = 0; i < 4; i++) {
   $(".crystalImages").append(crystalRocks);
 
 }
+
+$(".crystalRocks").on('click', function () {
+
+  // console.log($(this));
+
+});
