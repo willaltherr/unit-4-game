@@ -26,8 +26,10 @@ for (var i = 0; i < 4; i++) {
   console.log(random);
 
   var crystalRocks = $("<div>");
-      crystalRocks.attr("class", 'crystalRocks');
-
+      crystalRocks.attr({
+        "class": 'crystalRocks',
+        "image-random": random
+      });
   $(".crystalImages").append(crystalRocks);
 
 }
