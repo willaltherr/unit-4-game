@@ -32,6 +32,10 @@ $( ".wins" ).text(wins);
 $( ".loss" ).text(loss);
 $( ".score" ).text(score);
 
-
-
-
+// Get Random Numbers Assigned to Crystals
+$('crystalImg').on('click', function() {
+  $( '#image1').append(randCrystalOne);
+  $( '#image2').append(randCrystalTwo);
+  $( '#image3').append(randCrystalThree);
+  $( '#image4').append(randCrystalFour);
+})
