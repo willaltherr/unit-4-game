@@ -15,4 +15,6 @@
 // Start over once you either win or lose
 
 
-
+var randNumbers;
+var wins = 0;
+var losses = 0;
