@@ -21,5 +21,10 @@ var losses = 0;
 
 
 for (var i = 0; i < 4; i++) {
-  console.log("Crystal Collector");
+
+  var crystalRocks = $("<div>");
+      crystalRocks.attr("class", 'crystalRocks');
+
+  $(".crystalImages").append(crystalRocks);
+
 }

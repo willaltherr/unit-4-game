@@ -1,4 +1,9 @@
-.crystalImg {
-  height: 150px;
-  width: 150px;
+.crystalRocks {
+  border: 1px solid black;
+  height: 175px;
+  width: 175px;
+  float: left;
+  text-align: center;
+  margin-left: 7.5%;
+  margin-top: 5%;
 }
