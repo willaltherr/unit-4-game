@@ -21,6 +21,9 @@ var losses = 0;
 
 
 for (var i = 0; i < 4; i++) {
+  
+  var random = Math.floor(Math.random() * 12);
+  console.log(random);
 
   var crystalRocks = $("<div>");
       crystalRocks.attr("class", 'crystalRocks');
