@@ -27,7 +27,7 @@ $("#targetScore").html('Target Score = ' + randNumbers);
 for (var i = 0; i < 4; i++) {
   
   var random = Math.floor(Math.random() * 12) + 1;
-  console.log(random);
+  // console.log(random);
 
   var crystalRocks = $("<div>");
       crystalRocks.attr({
@@ -40,6 +40,6 @@ for (var i = 0; i < 4; i++) {
 
 $(".crystalRocks").on('click', function () {
 
-  // console.log($(this));
+  console.log($(this).attr('image-random'));
 
 });
