@@ -36,7 +36,7 @@ for (var i = 0; i < 4; i++) {
         "image-random": random
       });
 
-      // crystalRocks.html(random);
+      crystalRocks.html(random);
 
   $(".crystalImages").append(crystalRocks);
 
@@ -48,16 +48,19 @@ $(".crystalRocks").on('click', function () {
 
   counter += number
 
-  // console.log(counter);
 
   if (counter > randNumbers) {
     losses ++;
+
+    $("#losses").html(losses);
   }
 
   else if (counter === randNumbers) {
     wins ++;
+
+    $("#wins").html(wins);
   }
 
-  // console.log(counter);
+  console.log(counter);
   
 });
