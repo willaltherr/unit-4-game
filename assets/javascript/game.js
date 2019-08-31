@@ -20,27 +20,35 @@ var wins = 0;
 var losses = 0;
 var counter = 0;
 
-randNumbers = Math.floor(Math.random() * 101 ) + 19;
-  // console.log(randNumbers);
+var startOver = function () {
 
-$("#targetScore").html('Target Score = ' + randNumbers);
+    $(".crystalImages").empty();
 
-for (var i = 0; i < 4; i++) {
-  
-  var random = Math.floor(Math.random() * 12) + 1;
-  // console.log(random);
+    randNumbers = Math.floor(Math.random() * 101 ) + 19;
+    // console.log(randNumbers);
 
-  var crystalRocks = $("<div>");
-      crystalRocks.attr({
-        "class": 'crystalRocks',
-        "image-random": random
-      });
+  $("#targetScore").html('Target Score = ' + randNumbers);
 
-      crystalRocks.html(random);
+  for (var i = 0; i < 4; i++) {
+    
+    var random = Math.floor(Math.random() * 12) + 1;
+    // console.log(random);
 
-  $(".crystalImages").append(crystalRocks);
 
+    var crystalRocks = $("<div>");
+        crystalRocks.attr({
+          "class": 'crystalRocks',
+          "image-random": random
+        });
+
+        crystalRocks.html(random);
+
+    $(".crystalImages").append(crystalRocks);
+
+  }
 }
+
+startOver();
 
 $(".crystalRocks").on('click', function () {
 
@@ -53,10 +61,12 @@ $(".crystalRocks").on('click', function () {
     losses ++;
 
     $("#losses").html(losses);
+    startOver();
   }
 
   else if (counter === randNumbers) {
     wins ++;
+    startOver();
 
     $("#wins").html(wins);
   }
