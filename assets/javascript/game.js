@@ -35,6 +35,9 @@ for (var i = 0; i < 4; i++) {
         "class": 'crystalRocks',
         "image-random": random
       });
+
+      // crystalRocks.html(random);
+
   $(".crystalImages").append(crystalRocks);
 
 }
@@ -45,6 +48,16 @@ $(".crystalRocks").on('click', function () {
 
   counter += number
 
-  console.log(counter);
+  // console.log(counter);
+
+  if (counter > randNumbers) {
+    losses ++;
+  }
+
+  else if (counter === randNumbers) {
+    wins ++;
+  }
+
+  // console.log(counter);
   
 });
