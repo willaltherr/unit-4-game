@@ -41,8 +41,6 @@ var startOver = function () {
           "image-random": random
         });
 
-        crystalRocks.html(random);
-
     $(".crystalImages").append(crystalRocks);
 
   }
@@ -50,33 +48,32 @@ var startOver = function () {
 
 startOver();
 
-var reset = function () {
-
-}
-
 $(document).on('click', ".crystalRocks", function () {
 
   var number = parseInt($(this).attr('image-random'));
 
   counter += number
 
+  $("#counter").html("Your Score = " + counter)
 
   if (counter > randNumbers) {
     losses ++;
 
-    $("#losses").html(losses);
+    $("#losses").html("Losses: " + losses);
     counter = 0;
+    $("#counter").html("Your Score = " + counter)
     startOver();
   }
 
   else if (counter === randNumbers) {
     wins ++;
 
-    $("#wins").html(wins);
+    $("#wins").html("Wins: " + wins);
     counter = 0;
+    $("#counter").html("Your Score = " + counter)
     startOver();
   }
 
-  console.log(counter);
+  // console.log(counter);
   
 });
