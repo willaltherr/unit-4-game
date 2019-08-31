@@ -50,7 +50,11 @@ var startOver = function () {
 
 startOver();
 
-$(".crystalRocks").on('click', function () {
+var reset = function () {
+
+}
+
+$(document).on('click', ".crystalRocks", function () {
 
   var number = parseInt($(this).attr('image-random'));
 
@@ -61,14 +65,16 @@ $(".crystalRocks").on('click', function () {
     losses ++;
 
     $("#losses").html(losses);
+    counter = 0;
     startOver();
   }
 
   else if (counter === randNumbers) {
     wins ++;
-    startOver();
 
     $("#wins").html(wins);
+    counter = 0;
+    startOver();
   }
 
   console.log(counter);
