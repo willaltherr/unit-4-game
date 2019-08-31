@@ -24,6 +24,13 @@ var startOver = function () {
 
     $(".crystalImages").empty();
 
+    var images = [
+      "https://www.holywellswimmingclub.co.uk/wp-content/uploads/2017/03/crystal-2.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/81s0ngKC0AL._SL1500_.jpg",
+      "https://ae01.alicdn.com/kf/HTB1qMDtdGQoBKNjSZJnq6yw9VXaS/145g-natural-red-quarzo-cluster-beautiful-red-aura-angelo-di-cristallo-cluster-rivestimento-In-Titanio-cluster.jpg_640x640.jpg",
+      "https://thumbs.dreamstime.com/b/purple-ice-crystal-vector-illustration-white-background-111181395.jpg"
+    ];
+
     randNumbers = Math.floor(Math.random() * 101 ) + 19;
     // console.log(randNumbers);
 
@@ -39,6 +46,11 @@ var startOver = function () {
         crystalRocks.attr({
           "class": 'crystalRocks',
           "image-random": random
+        });
+
+        crystalRocks.css({
+          "background-image":"url('" + images[i] + "')",
+          "background-size":"cover"
         });
 
     $(".crystalImages").append(crystalRocks);
