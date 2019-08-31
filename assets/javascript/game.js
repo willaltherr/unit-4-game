@@ -18,6 +18,7 @@
 var randNumbers;
 var wins = 0;
 var losses = 0;
+var counter = 0;
 
 randNumbers = Math.floor(Math.random() * 101 ) + 19;
   // console.log(randNumbers);
@@ -40,6 +41,10 @@ for (var i = 0; i < 4; i++) {
 
 $(".crystalRocks").on('click', function () {
 
-  console.log($(this).attr('image-random'));
+  var number = parseInt($(this).attr('image-random'));
 
+  counter += number
+
+  console.log(counter);
+  
 });
