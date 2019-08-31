@@ -3,7 +3,43 @@
   height: 175px;
   width: 175px;
   float: left;
+  top: 0%;
   text-align: center;
   margin-left: 7.5%;
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+body {
+  background-color: cadetblue;
+}
+
+h1 {
+  font-size: 200%;
+  text-decoration: underline;
+  color: white;
+  padding-bottom: 3%;
+}
+
+h2 {
+  font-size: 300%;
+  padding: 1%;
+  color: white;
+  border: 1px solid white;
+}
+
+h3 {
+  font-size: 200%;
+  padding: 1%;
+  color: white;
+}
+
+#wins {
+  padding-top: 3%;
+  color: white;
+}
+
+#losses {
+  padding-top: 3%;
+  color: white;
 }
