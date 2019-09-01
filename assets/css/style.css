@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 200%;
+  font-size: 150%;
   text-decoration: underline;
   color: white;
   padding-bottom: 3%;
@@ -34,6 +34,12 @@ h3 {
   color: white;
 }
 
+h4 {
+  font-size: 150%;
+  padding: 1%;
+  color: white;
+}
+
 #wins {
   padding-top: 3%;
   color: white;
@@ -42,4 +48,11 @@ h3 {
 #losses {
   padding-top: 3%;
   color: white;
+}
+
+li {
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+text-align: left;
 }
